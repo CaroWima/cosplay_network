@@ -1,0 +1,84 @@
+
+@import "resources/sass/themes/lightmode/_variables.scss";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+    background: $gray-200;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+
+    &:active {
+        outline: $primary;
+    }
+}
+
+
+nav{
+    background-color: $black;
+
+    .navbar-toggler{
+        color: $primary;
+    }
+}
+
+input{
+    border: none;
+
+    &:focus {
+        outline-color: $primary;
+        cursor: pointer;
+    }
+    
+}
+button {
+    border: none;
+    padding: auto;
+
+    &:active {
+        border: $purple;
+        outline: $purple;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: $indigo;
+    bottom: 0;
+    
+}
+
+.carousel-item {
+     
+    &:hover {
+        outline: $secondary;
+        cursor: pointer;
+    }
+}
+
+.container{
+    background-color: $gray-400;
+    height: 100%;
+    padding-bottom: 0;
+}
+
+.card{
+    border-radius: $border-radius-lg;
+    outline: $gray-800;
+
+    .card-header{
+        background: $purple;
+    }
+    
+}
+
+
+
+
