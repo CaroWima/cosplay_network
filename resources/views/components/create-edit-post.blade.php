@@ -1,23 +1,22 @@
 
 <!--add collapse -->
-<div class="row d-flex p-3">
-    <div class="col-sm-10 offset-sm-1">
+<div class="row d-flex p-3 ">
+    <div class="col-sm-10 offset-sm-1 d-flex" style="height: 74vh; flex-direction: column">
         <div class="card">
             <div class="card-header">
                 <div class="media row m-3">
-                    <div class=" col-9">
-                        <h1 class="title ">New Post</h1>
+                    <div class="col-8">
+                        <h1 class="title">New Post</h1>
                     </div>
 
-                    <div class="col-3 media-img">
-                        
-                        <small class="d-inline"></small>
-                        <img class="card-img float-right w-50 "src="{{ asset('img/placeholder-square.jpg')}}" alt="">
+                    <div class="d-flex col-4 media-img justify-content-end">
+                        <i class="d-inline"></i>
+                        <img class="d-inline card-img float-right" style="max-width:75px" src="{{ asset('img/5081.jpg')}}" alt="">
                     </div>
                 </div>
             </div>
 
-            <div class="card-body form-container ">
+            <div class="card-body form-container">
                 <div class="col p-4">
                     <form class="" action="/postCreate" method="post">
                         @csrf
@@ -49,3 +48,4 @@
         </div>
     </div>
 </div>
+<hr>

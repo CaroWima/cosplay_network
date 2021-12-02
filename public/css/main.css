@@ -102,7 +102,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
-  color: #5a5a5a;
+  color: #212529;
 }
 
 h1, .h1 {
@@ -5970,7 +5970,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 1rem;
-  color: #5a5a5a;
+  color: #212529;
   background-color: #f0f0f0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top-left-radius: calc(0.6rem - 1px);
@@ -11286,7 +11286,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background: #f7f7f9;
+  background: linear-gradient(#f3969a, #78c2ad);
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -11298,6 +11298,10 @@ a {
 }
 a:active {
   outline: #78c2ad;
+}
+
+p {
+  color: #343a40;
 }
 
 nav {
@@ -11324,23 +11328,31 @@ button:active {
   outline: #6f42c1;
 }
 
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  background-color: #6610f2;
-  bottom: 0;
+.carousel-inner {
+  height: 700px;
 }
 
+.carousel-item {
+  height: 100%;
+}
 .carousel-item:hover {
   outline: #f3969a;
   cursor: pointer;
 }
 
 .container {
-  background-color: #ced4da;
-  height: 100%;
-  padding-bottom: 0;
+  background-color: #eceeef;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #6610f2;
+  height: 5vh;
+}
+
+.copySpan {
+  color: #f7f7f9;
 }
 
 .card {
@@ -11349,4 +11361,25 @@ footer {
 }
 .card .card-header {
   background: #6f42c1;
+  color: #f7f7f9 !important;
+}
+
+.post-container {
+  background-color: #f8f9fa;
+}
+
+h1, .h1,
+h2,
+.h2 {
+  color: #78c2ad;
+}
+
+@media screen and (max-width: 540px) {
+  .navbar-nav {
+    margin-top: 20px;
+  }
+
+  .carousel-inner {
+    height: 200px;
+  }
 }

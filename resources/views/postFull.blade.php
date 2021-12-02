@@ -4,23 +4,23 @@
 
 
 <div class="row d-flex">
-    <div class="col-sm-10 offset-sm-1 bg-light p-4" id="postFullView">
+    <div class="post-container col-sm-10 offset-sm-1 p-4" id="postFullView">
         <div class="post-header mt-2">
             <h1 class="d-inline">{{ $post->title }}</h1>
             <br>
-            <i class="d-inline">created by {{ $post->poster}}</i>
+            <i class="d-inline">created by user</i>
             <i class="d-inline float-right p-auto">{{ $post->created_at->diffForHumans() }}</i>
         </div>
         <hr>
         <div class="row justify-content-center card-body m-3">
-            <div class="col-md-4 p-2" id="postImage">
+            <div class="col-md-10 p-2" id="postImage">
                 <!--if-->
-                <img src="{{ $post->image }}" class="card-img" alt="...">
+                <img class="w-100" src="{{ asset('img/TNSWH_LDP.jpg') }}">
                 <!--elseif
                 <img src="" alt="" class="entryImage">
                 endif-->
             </div>
-            <div class="col-md-8 mt-2 pr-3"  id="postContent">
+            <div class="col-md-10 mt-2 pr-3"  id="postContent">
                 {{ $post->content }}
             </div>
         </div>

@@ -13,7 +13,6 @@ class LoginRequest extends FormRequest
      * @return bool
      */
     public function authorize() {
-        
         return true;
     }
 
@@ -30,7 +29,7 @@ class LoginRequest extends FormRequest
         ];
     }
 
-
+    //this is friggin amazing, I love laravel
 
     public function getCredentials() {
         

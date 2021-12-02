@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     public function showLogin()
     {
-        return vieW('auth.login');
+        return view('auth.login');
     }
 
     
@@ -31,6 +31,6 @@ class LoginController extends Controller
 
     protected function authenticated(Request $request, $user)
     {
-        return redirect()->intended();
+        return redirect()->intended()->with('success', "Welcome! :D");
     }
 }

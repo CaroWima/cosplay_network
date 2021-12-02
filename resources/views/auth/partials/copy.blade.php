@@ -1,1 +1,0 @@
-<p class="text-muted">&copy; {{date('Y')}}</p>

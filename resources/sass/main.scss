@@ -3,7 +3,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body {
-    background: $gray-200;
+    background: linear-gradient($secondary, $primary);
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -18,11 +18,15 @@ a {
     }
 }
 
+p{
+    color: $gray-800;
+}
 
 nav{
     background-color: $black;
+   
 
-    .navbar-toggler{
+    .navbar-toggler {
         color: $primary;
     }
 }
@@ -46,16 +50,12 @@ button {
     }
 }
 
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    background-color: $indigo;
-    bottom: 0;
-    
+.carousel-inner{
+    height:700px;
 }
 
 .carousel-item {
+    height: 100%;
      
     &:hover {
         outline: $secondary;
@@ -64,21 +64,52 @@ footer {
 }
 
 .container{
-    background-color: $gray-400;
-    height: 100%;
-    padding-bottom: 0;
+    background-color: $gray-300;
+
 }
 
-.card{
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $indigo;
+    height:5vh;
+}
+
+.copySpan {
+    color: $gray-200;
+}
+
+.card {
     border-radius: $border-radius-lg;
     outline: $gray-800;
 
-    .card-header{
+    .card-header {
         background: $purple;
+        color: $gray-200 !important;
     }
     
 }
 
+.post-container {
+    background-color: $gray-100;
+}
 
+h1,
+h2 {
+    color: $primary;
+}
+
+@media screen and (max-width:540px){
+
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .carousel-inner{
+        height: 200px;
+        
+    }
+
+}
 
 
